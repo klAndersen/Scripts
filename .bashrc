@@ -26,16 +26,6 @@ HISTFILESIZE=2000
 export PATH=$HOME/.gem/ruby/2.4.0/bin:$PATH
 export PATH=$HOME/bin/:$PATH
 
-# Trace32
-export T32SYS=/opt/t32
-export T32TMP=/tmp
-export T32ID=T32
-# executable path to the Trace32 
-export PATH=$PATH:/opt/t32/bin/pc_linux64
-
-
-# adds color to minicom
-export MINICOM="-m -c on"
 # show git directory
 source /usr/share/git/completion/git-prompt.sh
 export GIT_PS1_SHOWDIRTYSTATE=1
@@ -53,9 +43,6 @@ alias less='less -R'
 if [ -f $HOME/.bash_aliases ]; then
 	. $HOME/.bash_aliases
 fi
-
-
-alias qt59="/opt/Qt5.9/Tools/QtCreator/bin/qtcreator &"
 
 ### FUNCTIONS ###
 

@@ -22,9 +22,8 @@ HISTSIZE=1000
 HISTFILESIZE=2000
 
 # exports
-#export PATH=$HOME/BobBuildTool:$PATH
-export PATH=$HOME/.gem/ruby/2.4.0/bin:$PATH
-export PATH=$HOME/bin/:$PATH
+#export PATH=$HOME/bin/:$PATH
+export ANDROID_HOME=/opt/android-sdk
 
 # show git directory
 source /usr/share/git/completion/git-prompt.sh
@@ -103,5 +102,6 @@ function print_pem_data() {
         fi
 }
 
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
+# RVM for Ruby
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
